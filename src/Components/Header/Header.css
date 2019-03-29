@@ -4,6 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.75)
 }
 #search{
     display: flex;
@@ -55,19 +56,35 @@
 /* BOTTOM NAV ELEMENTS - SMALL SCREENS */
 
 #bottom_nav{
-    width: 94vw;
+    width: 100vw;
     height: 50px;
-    display: flex;
-    flex-wrap: wrap;
     position: absolute;
     bottom: 0;
-    left: 10px;
-    right: 10px;
-    border: 1px solid black;
-
+    background: rgba(255, 255, 255, 0.75)
 }
 
+#bottom_nav_elements{
+    height: 50px;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+}
+
+.bottom-nav-element{
+    height: 40px;
+    width: 67px;
+    /* border: 1px dotted orange; */
+    text-align: center;
+    line-height: 0;
+}
 .bottom-nav-element img{
     height: 30px;
     width: 30px;
+}
+.bottom-nav-element p{
+    font-size: 8px;
+    opacity: 0.6
 }

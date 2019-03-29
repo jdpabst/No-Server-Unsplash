@@ -30,27 +30,32 @@ class Header extends Component{
 
                 <div id="bottom_nav">
 
-                    <div id='home' class='bottom-nav-element'>
-                        <img src={ logo } alt='home' />
-                        <p>HOME</p>
-                    </div>
-                    
-                    <div id='following' class='bottom-nav-element'>
-                        <img src= { following } alt='following' />
-                        <p>FOLLOWING</p>
-                    </div>
+                    <div id='bottom_nav_elements'>
 
-                    <div id='notifications' className='bottom-nav-element'>
-                        <img src={ notifications } alt='notifications' />
-                        <p>NOTIFICATIONS</p>
-                    </div>
+                        <div id='home' class='bottom-nav-element'>
+                            <img src={ logo } alt='home' />
+                            <p>HOME</p>
+                        </div>
+                        
+                        <div id='following' class='bottom-nav-element'>
+                            <img src= { following } alt='following' />
+                            <p>FOLLOWING</p>
+                        </div>
 
-                    <div id='saved' className='bottom-nav-element'>
-                        <img src={ saved } alt='saved' />
-                        <p>SAVED</p>
+                        <div id='notifications' className='bottom-nav-element'>
+                            <img src={ notifications } alt='notifications' />
+                            <p>NOTIFICATIONS</p>
+                        </div>
+
+                        <div id='saved' className='bottom-nav-element'>
+                            <img src={ saved } alt='saved' />
+                            <p>SAVED</p>
+                        </div>
+
                     </div>
 
                 </div>
+                
             </div>
         )
     }
