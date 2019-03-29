@@ -1,0 +1,73 @@
+#top-nav{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+#search{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    background: #efefef;
+    height: 40px;
+    width: 85vw;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#search #search-icon{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+#search p{
+    position: absolute;
+    left: 48px;
+    color: #333333;
+    opacity: 0.4;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+#search #camera-icon{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+#message-icon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.search-img{
+    height: 30px;
+    width: 30px;
+}
+
+
+/* BOTTOM NAV ELEMENTS - SMALL SCREENS */
+
+#bottom_nav{
+    width: 94vw;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    border: 1px solid black;
+
+}
+
+.bottom-nav-element img{
+    height: 30px;
+    width: 30px;
+}

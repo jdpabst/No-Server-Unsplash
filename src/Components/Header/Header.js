@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import './Header.css';
 import logo from '../../media/logo.png';
 import search from '../../media/search_icon.png';
 import following from '../../media/following_icon.png';
 import notifications from '../../media/bell_icon.png';
-import messages from '../../media/message_icon.png';
+import messages from '../../media/message_icon.ico';
 import saved from '../../media/profile_icon.png';
+import camera from '../../media/camera-icon.png'
+import './Header.css';
 
 class Header extends Component{
 
@@ -16,12 +17,12 @@ class Header extends Component{
 
                     {/* SEARCH BAR REDIRECTS TO ANOTHER PAGE WHERE THERE IS AN INPUT */}
                     <div id='search'>
-                        <img src={ search } alt='search' />
+                        <img src={ search } alt='search' id='search-icon' className='search-img'/>
                         <p>SEARCH</p>
-                        <img src={ messages } alt='search by image' />
+                        <img src= { camera } alt='search by image' id='camera-icon' className='search-img'/>
                     </div>
 
-                    <img src='' alt='messages'/>
+                    <img src={ messages } alt='messages' id='message-icon' className='search-img' />
 
                 </div>
 
