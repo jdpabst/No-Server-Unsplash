@@ -32,12 +32,12 @@ class Header extends Component{
 
                     <div id='bottom_nav_elements'>
 
-                        <div id='home' class='bottom-nav-element'>
+                        <div id='home' className='bottom-nav-element'>
                             <img src={ logo } alt='home' />
                             <p>HOME</p>
                         </div>
                         
-                        <div id='following' class='bottom-nav-element'>
+                        <div id='following' className='bottom-nav-element'>
                             <img src= { following } alt='following' />
                             <p>FOLLOWING</p>
                         </div>
