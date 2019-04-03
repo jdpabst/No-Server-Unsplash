@@ -1,0 +1,45 @@
+#pins{
+    height: auto;
+    width: auto;
+    padding: 0 10px;
+    column-count: 2;
+}
+
+#pin-container{
+    width: 45vw;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+
+#img{
+    width: 45vw;
+    border-radius: 10px;
+}
+
+#desc-box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 4px;
+}
+#pin-container p{
+    width: 80%;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    margin-left: 5px;
+    text-align: left;
+    font-weight: 700;
+
+}
+
+#three-dots-option{
+    font-weight: 700;
+    opacity: 0.5;
+    height: auto;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: -7px;
+}

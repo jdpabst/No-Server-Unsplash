@@ -10,27 +10,39 @@ class Pins extends Component{
     constructor(){
         super();
         this.state = {
-            response: '',
+            response: [],
             image: '',
         }
     }
 
     componentDidMount(){
-        axios.get( 'https://api.unsplash.com/photos?page=1&client_id=' + app_id ).then((res) => {
+        axios.get( 'https://api.unsplash.com/photos?page=2&per_page=30&client_id=' + app_id ).then((res) => {
             console.log(res.data);
-            console.log(res.data[0].urls.regular)
             this.setState({
+                response: res.data,
                 image: res.data[0].urls.small
             })
+            console.log(this.state.response[0].urls.small)
         })
     }
 
     render(){
+        let arr = this.state.response;
+
         return(
-            <div>
-                <div id='pin-test'>
-                    <img src= { this.state.image } />
-                </div>
+            <div id='pins'>
+                {/* map has 3 parameters: object on the array, the index, and the full array */}
+                {arr.map( (img, id) => {
+                    return <div key = { id } id='pin-container'>
+                        {/* img is already the object on the array */}
+                        <img id="img" src={img.urls.small} />
+                        <div id='desc-box'>
+                            <p>{img.alt_description} by: {img.user.first_name}</p>
+                            <div id='three-dots-option'> ... </div>
+                        </div>
+                    </div>
+                })}
+                
             </div>
         )
     }
