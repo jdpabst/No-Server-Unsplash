@@ -26,6 +26,25 @@ class Header extends Component{
 
                 </div>
 
+            {/* DESKTOP HEADER */}
+                <div id="top-nav-large">
+                    <img src= { logo } />
+                    <div id='search'>
+                        <img src={ search } alt='search' id='search-icon' className='search-img'/>
+                        <p>SEARCH</p>
+                    </div>
+                    <p>Home</p>
+                    <p>Following</p>
+                    <div id="large-nav-saved">
+                        <img src={ saved } />
+                        <p>Saved</p>
+                    </div>
+                    <img src={ messages } alt='messages' id='message-icon' className='search-img' />
+                    <img src={ notifications } />
+                    <div id='three-dots'> ... </div>
+                </div>
+
+
 
 
                 <div id="bottom_nav">

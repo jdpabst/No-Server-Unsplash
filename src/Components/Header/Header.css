@@ -7,6 +7,17 @@
     background: rgba(255, 255, 255, 0.75);
     position: relative;
 }
+
+#top-nav-large{
+    height: 50px;
+    width: 100vw;
+    display: none;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    position: relative;
+}
+
 #search{
     display: flex;
     flex-wrap: wrap;
@@ -94,6 +105,18 @@
     #top-nav{
         width: 95vw;
         margin-top: 5px;
-        margin-left: 5px;
+        margin-left: 12px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #top-nav{
+        display: none;
+    }
+    #bottom_nav{
+        display: none;
+    }
+    #top-nav-large{
+        display: flex;
     }
 }
