@@ -4,7 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 20px;
-    background: rgba(255, 255, 255, 0.75)
+    background: rgba(255, 255, 255, 0.75);
+    position: relative;
 }
 #search{
     display: flex;
@@ -87,4 +88,12 @@
 .bottom-nav-element p{
     font-size: 8px;
     opacity: 0.6
+}
+
+@media only screen and (min-width: 768px){
+    #top-nav{
+        width: 95vw;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
 }

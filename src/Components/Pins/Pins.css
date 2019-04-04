@@ -3,18 +3,24 @@
     width: auto;
     padding: 0 10px;
     column-count: 2;
+    /* border: 1px dotted black; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+}
+
+#img{
+    width: 45vw;
+    border-radius: 10px;
+    /* border: 1px dotted red; */
 }
 
 #pin-container{
     width: 45vw;
     padding-bottom: 15px;
     position: relative;
-}
-
-
-#img{
-    width: 45vw;
-    border-radius: 10px;
+    /* border: 2px solid brown; */
 }
 
 #desc-box{
@@ -22,6 +28,7 @@
     height: auto;
     position: relative;
     margin-top: 4px;
+    /* border: 1px solid hotpink; */
 }
 #pin-container p{
     width: 80%;
@@ -31,6 +38,8 @@
     margin-left: 5px;
     text-align: left;
     font-weight: 700;
+    /* border: 1px dotted lime; */
+    /* align-self: center; */
 
 }
 
@@ -42,4 +51,45 @@
     position: absolute;
     right: 0;
     top: -7px;
+    /* border: 1px dotted purple; */
 }
+
+@media only screen and (min-width: 768px){
+    #pins{
+        margin-left: 10px;
+        column-count: 3;
+        padding: 0;
+        width: 94vw;
+    }
+
+    #desc-box{
+        width: 100%;
+    }
+
+    #img{
+        width: 100%;
+    }
+
+    #pin-container{
+        width: 30vw;
+    }
+    #pin-container p{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #pins{
+        column-count: 5;
+    }
+}
+
+@media only screen and (min-width: 1660px){
+    #pins{
+        column-count: 7;
+    }
+}
+
+
+
+
